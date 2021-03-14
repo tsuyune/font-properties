@@ -1,0 +1,314 @@
+:root {
+    --bg-color: #534D56;
+    --text-color: #F8F1FF;
+    --primary-color: #F4E76E;
+    --accent-color: #DECDF5;
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url('../fonts/RobotoFlex-VariableFont.ttf') format('truetype-variations');
+
+    font-style: normal;
+
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../fonts/Caveat-VariableFont.ttf') format('truetype-variations');
+
+    font-style: normal;
+
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/Cuprum-VariableFont.ttf') format('truetype-variations');
+
+    font-style: normal;
+
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'Cuprum';
+    src: url('../fonts/Cuprum-Italic-VariableFont.ttf') format('truetype-variations');
+
+    font-style: italic;
+
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'Imbue';
+    src: url('../fonts/Imbue-VariableFont.ttf') format('truetype-variations');
+
+    font-style: normal;
+
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono-VariableFont.ttf') format('truetype-variations');
+
+    font-style: normal;
+
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono-Italic-VariableFont.ttf') format('truetype-variations');
+
+    font-style: italic;
+    font-variation-settings: 'ital'1;
+
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text-color, #F8F1FF);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-color, #534D56);
+}
+
+h1 {
+    color: var(--primary-color, #F4E76E);
+    font-family: 'JetBrainsMono', monospace;
+    font-style: italic;
+
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Cuprum', monospace;
+    font-size: 18px;
+}
+
+.family,
+.weight,
+.stretch,
+.style,
+.size {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
+
+.family div,
+.weight div,
+.stretch div,
+.style div,
+.size div {
+    min-width: 400px;
+
+    border: 1px solid var(--accent-color, #DECDF5);
+    border-radius: 10px;
+
+    margin: 2px 0;
+    padding: 10px 20px;
+}
+
+/* font-family */
+
+#family-item1 p {
+    font-family: serif;
+}
+
+#family-item2 p {
+    font-family: sans-serif;
+}
+
+#family-item3 p {
+    font-family: monospace;
+}
+
+#family-item4 p {
+    font-family: cursive;
+}
+
+#family-item5 p {
+    font-family: fantasy;
+}
+
+#family-item6 p {
+    font-family: 'RobotoFlex', monospace;
+}
+
+#family-item7 p {
+    font-family: 'Caveat', monospace;
+}
+
+#family-item8 p {
+    font-family: 'Cuprum', monospace;
+}
+
+#family-item9 p {
+    font-family: 'Imbue', monospace;
+}
+
+#family-item10 p {
+    font-family: 'JetBrainsMono', monospace;
+}
+
+/* font-weight */
+
+#weight-item1 p {
+    font-weight: normal;
+}
+
+#weight-item2 p {
+    font-weight: bold;
+}
+
+#weight-item3 p {
+    font-weight: lighter;
+}
+
+#weight-item4 p {
+    font-weight: bolder;
+}
+
+#weight-item5 p {
+    font-weight: 100;
+}
+
+#weight-item6 p {
+    font-weight: 300;
+}
+
+#weight-item7 p {
+    font-weight: 500;
+}
+
+#weight-item8 p {
+    font-weight: 600;
+}
+
+#weight-item9 p {
+    font-weight: 800;
+}
+
+#weight-item10 p {
+    font-weight: 900;
+}
+
+/* font-stretch */
+
+#style-item1 p {
+    font-stretch: 50%;
+}
+
+#stretch-item2 p {
+    font-stretch: extra-condensed;
+}
+
+#stretch-item3 p {
+    font-stretch: condensed;
+}
+
+#stretch-item4 p {
+    font-stretch: semi-condensed;
+}
+
+#stretch-item5 p {
+    font-stretch: normal;
+}
+
+#stretch-item6 p {
+    font-stretch: semi-expanded;
+}
+
+#stretch-item7 p {
+    font-stretch: 125%;
+}
+
+#stretch-item8 p {
+    font-stretch: extra-expanded;
+}
+
+#stretch-item9 p {
+    font-stretch: ultra-expanded;
+}
+
+/* font-style */
+
+#style-item1 p {
+    font-style: normal;
+}
+
+#style-item2 p {
+    font-style: italic;
+}
+
+#style-item3 p {
+    font-style: oblique;
+}
+
+#style-item4 p {
+    font-style: oblique 15deg;
+}
+
+#style-item5 p {
+    font-style: oblique 50deg;
+}
+
+#style-item6 p {
+    font-style: oblique 90deg;
+}
+
+/* font-size */
+
+#size-item1 p {
+    font-size: 1.2em;
+}
+
+#size-item2 p {
+    font-size: x-small;
+}
+
+#size-item3 p {
+    font-size: smaller;
+}
+
+#size-item4 p {
+    font-size: larger;
+}
+
+#size-item5 p {
+    font-size: 80%;
+}
+
+#size-item6 p {
+    font-size: medium;
+}
+
+#size-item7 p {
+    font-size: xxx-large;
+}
+
+#size-item8 p {
+    font-size: xx-small;
+}
+
+#size-item9 p {
+    font-size: 12px;
+}
