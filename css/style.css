@@ -105,7 +105,8 @@ p {
 .weight,
 .stretch,
 .style,
-.size {
+.size,
+.font {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -117,7 +118,8 @@ p {
 .weight div,
 .stretch div,
 .style div,
-.size div {
+.size div,
+.font div {
     min-width: 400px;
 
     border: 1px solid var(--accent-color, #DECDF5);
@@ -311,4 +313,42 @@ p {
 
 #size-item9 p {
     font-size: 12px;
+}
+
+/* font */
+
+#font-item1 p {
+    font: italic 1.2em "Cuprum", serif;
+}
+
+#font-item2 p {
+    font: italic small-caps bold 16px/2 cursive;
+}
+
+#font-item3 p {
+    font: small-caps bold 24px/1 sans-serif;
+}
+
+#font-item4 p {
+    font: caption;
+}
+
+#font-item5 p {
+    font: icon;
+}
+
+#font-item6 p {
+    font: menu;
+}
+
+#font-item7 p {
+    font: message-box;
+}
+
+#font-item8 p {
+    font: status-bar;
+}
+
+#font-item9 p {
+    font: small-caption;
 }
